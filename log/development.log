@@ -1,0 +1,593 @@
+Started GET "/home/index" for ::1 at 2022-03-18 01:02:11 +0200
+  
+ActiveRecord::NoDatabaseError (We could not find your database: friends_development. Which can be found in the database configuration file located at config/database.yml.
+
+To resolve this issue:
+
+- Did you create the database for this app, or delete it? You may need to create your database.
+- Has the database name changed? Check your database.yml config has the correct database name.
+
+To create your database, run:
+
+        bin/rails db:create
+):
+  
+activerecord (7.0.2.3) lib/active_record/connection_adapters/postgresql_adapter.rb:81:in `rescue in new_client'
+activerecord (7.0.2.3) lib/active_record/connection_adapters/postgresql_adapter.rb:77:in `new_client'
+activerecord (7.0.2.3) lib/active_record/connection_adapters/postgresql_adapter.rb:37:in `postgresql_connection'
+activerecord (7.0.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:656:in `public_send'
+activerecord (7.0.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:656:in `new_connection'
+activerecord (7.0.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:700:in `checkout_new_connection'
+activerecord (7.0.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:679:in `try_to_checkout_new_connection'
+activerecord (7.0.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:640:in `acquire_connection'
+activerecord (7.0.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:341:in `checkout'
+activerecord (7.0.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:181:in `connection'
+activerecord (7.0.2.3) lib/active_record/connection_adapters/abstract/connection_handler.rb:211:in `retrieve_connection'
+activerecord (7.0.2.3) lib/active_record/connection_handling.rb:313:in `retrieve_connection'
+activerecord (7.0.2.3) lib/active_record/connection_handling.rb:280:in `connection'
+activerecord (7.0.2.3) lib/active_record/migration.rb:613:in `connection'
+activerecord (7.0.2.3) lib/active_record/migration.rb:608:in `build_watcher'
+activerecord (7.0.2.3) lib/active_record/migration.rb:590:in `block in call'
+activerecord (7.0.2.3) lib/active_record/migration.rb:589:in `synchronize'
+activerecord (7.0.2.3) lib/active_record/migration.rb:589:in `call'
+actionpack (7.0.2.3) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (7.0.2.3) lib/active_support/callbacks.rb:99:in `run_callbacks'
+actionpack (7.0.2.3) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (7.0.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.2.3) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (7.0.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (7.0.2.3) lib/action_dispatch/middleware/show_exceptions.rb:26:in `call'
+railties (7.0.2.3) lib/rails/rack/logger.rb:36:in `call_app'
+railties (7.0.2.3) lib/rails/rack/logger.rb:25:in `block in call'
+activesupport (7.0.2.3) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (7.0.2.3) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (7.0.2.3) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (7.0.2.3) lib/rails/rack/logger.rb:25:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (7.0.2.3) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+actionpack (7.0.2.3) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (7.0.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.0.2.3) lib/action_dispatch/middleware/server_timing.rb:20:in `call'
+actionpack (7.0.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.2.3) lib/action_dispatch/middleware/static.rb:23:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (7.0.2.3) lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+railties (7.0.2.3) lib/rails/engine.rb:530:in `call'
+puma (5.6.2) lib/puma/configuration.rb:252:in `call'
+puma (5.6.2) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.2) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.2) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.2) lib/puma/server.rb:441:in `process_client'
+puma (5.6.2) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started GET "/home/index" for ::1 at 2022-03-18 01:02:19 +0200
+  
+ActiveRecord::NoDatabaseError (We could not find your database: friends_development. Which can be found in the database configuration file located at config/database.yml.
+
+To resolve this issue:
+
+- Did you create the database for this app, or delete it? You may need to create your database.
+- Has the database name changed? Check your database.yml config has the correct database name.
+
+To create your database, run:
+
+        bin/rails db:create
+):
+  
+activerecord (7.0.2.3) lib/active_record/connection_adapters/postgresql_adapter.rb:81:in `rescue in new_client'
+activerecord (7.0.2.3) lib/active_record/connection_adapters/postgresql_adapter.rb:77:in `new_client'
+activerecord (7.0.2.3) lib/active_record/connection_adapters/postgresql_adapter.rb:37:in `postgresql_connection'
+activerecord (7.0.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:656:in `public_send'
+activerecord (7.0.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:656:in `new_connection'
+activerecord (7.0.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:700:in `checkout_new_connection'
+activerecord (7.0.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:679:in `try_to_checkout_new_connection'
+activerecord (7.0.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:640:in `acquire_connection'
+activerecord (7.0.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:341:in `checkout'
+activerecord (7.0.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:181:in `connection'
+activerecord (7.0.2.3) lib/active_record/connection_adapters/abstract/connection_handler.rb:211:in `retrieve_connection'
+activerecord (7.0.2.3) lib/active_record/connection_handling.rb:313:in `retrieve_connection'
+activerecord (7.0.2.3) lib/active_record/connection_handling.rb:280:in `connection'
+activerecord (7.0.2.3) lib/active_record/migration.rb:613:in `connection'
+activerecord (7.0.2.3) lib/active_record/migration.rb:608:in `build_watcher'
+activerecord (7.0.2.3) lib/active_record/migration.rb:590:in `block in call'
+activerecord (7.0.2.3) lib/active_record/migration.rb:589:in `synchronize'
+activerecord (7.0.2.3) lib/active_record/migration.rb:589:in `call'
+actionpack (7.0.2.3) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (7.0.2.3) lib/active_support/callbacks.rb:99:in `run_callbacks'
+actionpack (7.0.2.3) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (7.0.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.2.3) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (7.0.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (7.0.2.3) lib/action_dispatch/middleware/show_exceptions.rb:26:in `call'
+railties (7.0.2.3) lib/rails/rack/logger.rb:36:in `call_app'
+railties (7.0.2.3) lib/rails/rack/logger.rb:25:in `block in call'
+activesupport (7.0.2.3) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (7.0.2.3) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (7.0.2.3) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (7.0.2.3) lib/rails/rack/logger.rb:25:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (7.0.2.3) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+actionpack (7.0.2.3) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (7.0.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.0.2.3) lib/action_dispatch/middleware/server_timing.rb:20:in `call'
+actionpack (7.0.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.2.3) lib/action_dispatch/middleware/static.rb:23:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (7.0.2.3) lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+railties (7.0.2.3) lib/rails/engine.rb:530:in `call'
+puma (5.6.2) lib/puma/configuration.rb:252:in `call'
+puma (5.6.2) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.2) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.2) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.2) lib/puma/server.rb:441:in `process_client'
+puma (5.6.2) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started GET "/" for ::1 at 2022-03-18 01:03:33 +0200
+  
+ActiveRecord::NoDatabaseError (We could not find your database: friends_development. Which can be found in the database configuration file located at config/database.yml.
+
+To resolve this issue:
+
+- Did you create the database for this app, or delete it? You may need to create your database.
+- Has the database name changed? Check your database.yml config has the correct database name.
+
+To create your database, run:
+
+        bin/rails db:create
+):
+  
+activerecord (7.0.2.3) lib/active_record/connection_adapters/postgresql_adapter.rb:81:in `rescue in new_client'
+activerecord (7.0.2.3) lib/active_record/connection_adapters/postgresql_adapter.rb:77:in `new_client'
+activerecord (7.0.2.3) lib/active_record/connection_adapters/postgresql_adapter.rb:37:in `postgresql_connection'
+activerecord (7.0.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:656:in `public_send'
+activerecord (7.0.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:656:in `new_connection'
+activerecord (7.0.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:700:in `checkout_new_connection'
+activerecord (7.0.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:679:in `try_to_checkout_new_connection'
+activerecord (7.0.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:640:in `acquire_connection'
+activerecord (7.0.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:341:in `checkout'
+activerecord (7.0.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:181:in `connection'
+activerecord (7.0.2.3) lib/active_record/connection_adapters/abstract/connection_handler.rb:211:in `retrieve_connection'
+activerecord (7.0.2.3) lib/active_record/connection_handling.rb:313:in `retrieve_connection'
+activerecord (7.0.2.3) lib/active_record/connection_handling.rb:280:in `connection'
+activerecord (7.0.2.3) lib/active_record/migration.rb:613:in `connection'
+activerecord (7.0.2.3) lib/active_record/migration.rb:608:in `build_watcher'
+activerecord (7.0.2.3) lib/active_record/migration.rb:590:in `block in call'
+activerecord (7.0.2.3) lib/active_record/migration.rb:589:in `synchronize'
+activerecord (7.0.2.3) lib/active_record/migration.rb:589:in `call'
+actionpack (7.0.2.3) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (7.0.2.3) lib/active_support/callbacks.rb:99:in `run_callbacks'
+actionpack (7.0.2.3) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (7.0.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.2.3) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (7.0.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (7.0.2.3) lib/action_dispatch/middleware/show_exceptions.rb:26:in `call'
+railties (7.0.2.3) lib/rails/rack/logger.rb:36:in `call_app'
+railties (7.0.2.3) lib/rails/rack/logger.rb:25:in `block in call'
+activesupport (7.0.2.3) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (7.0.2.3) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (7.0.2.3) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (7.0.2.3) lib/rails/rack/logger.rb:25:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (7.0.2.3) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+actionpack (7.0.2.3) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (7.0.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.0.2.3) lib/action_dispatch/middleware/server_timing.rb:20:in `call'
+actionpack (7.0.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.2.3) lib/action_dispatch/middleware/static.rb:23:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (7.0.2.3) lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+railties (7.0.2.3) lib/rails/engine.rb:530:in `call'
+puma (5.6.2) lib/puma/configuration.rb:252:in `call'
+puma (5.6.2) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.2) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.2) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.2) lib/puma/server.rb:441:in `process_client'
+puma (5.6.2) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started GET "/" for ::1 at 2022-03-18 01:03:36 +0200
+  
+ActiveRecord::NoDatabaseError (We could not find your database: friends_development. Which can be found in the database configuration file located at config/database.yml.
+
+To resolve this issue:
+
+- Did you create the database for this app, or delete it? You may need to create your database.
+- Has the database name changed? Check your database.yml config has the correct database name.
+
+To create your database, run:
+
+        bin/rails db:create
+):
+  
+activerecord (7.0.2.3) lib/active_record/connection_adapters/postgresql_adapter.rb:81:in `rescue in new_client'
+activerecord (7.0.2.3) lib/active_record/connection_adapters/postgresql_adapter.rb:77:in `new_client'
+activerecord (7.0.2.3) lib/active_record/connection_adapters/postgresql_adapter.rb:37:in `postgresql_connection'
+activerecord (7.0.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:656:in `public_send'
+activerecord (7.0.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:656:in `new_connection'
+activerecord (7.0.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:700:in `checkout_new_connection'
+activerecord (7.0.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:679:in `try_to_checkout_new_connection'
+activerecord (7.0.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:640:in `acquire_connection'
+activerecord (7.0.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:341:in `checkout'
+activerecord (7.0.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:181:in `connection'
+activerecord (7.0.2.3) lib/active_record/connection_adapters/abstract/connection_handler.rb:211:in `retrieve_connection'
+activerecord (7.0.2.3) lib/active_record/connection_handling.rb:313:in `retrieve_connection'
+activerecord (7.0.2.3) lib/active_record/connection_handling.rb:280:in `connection'
+activerecord (7.0.2.3) lib/active_record/migration.rb:613:in `connection'
+activerecord (7.0.2.3) lib/active_record/migration.rb:608:in `build_watcher'
+activerecord (7.0.2.3) lib/active_record/migration.rb:590:in `block in call'
+activerecord (7.0.2.3) lib/active_record/migration.rb:589:in `synchronize'
+activerecord (7.0.2.3) lib/active_record/migration.rb:589:in `call'
+actionpack (7.0.2.3) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (7.0.2.3) lib/active_support/callbacks.rb:99:in `run_callbacks'
+actionpack (7.0.2.3) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (7.0.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.2.3) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (7.0.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (7.0.2.3) lib/action_dispatch/middleware/show_exceptions.rb:26:in `call'
+railties (7.0.2.3) lib/rails/rack/logger.rb:36:in `call_app'
+railties (7.0.2.3) lib/rails/rack/logger.rb:25:in `block in call'
+activesupport (7.0.2.3) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (7.0.2.3) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (7.0.2.3) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (7.0.2.3) lib/rails/rack/logger.rb:25:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (7.0.2.3) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+actionpack (7.0.2.3) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (7.0.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.0.2.3) lib/action_dispatch/middleware/server_timing.rb:20:in `call'
+actionpack (7.0.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.2.3) lib/action_dispatch/middleware/static.rb:23:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (7.0.2.3) lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+railties (7.0.2.3) lib/rails/engine.rb:530:in `call'
+puma (5.6.2) lib/puma/configuration.rb:252:in `call'
+puma (5.6.2) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.2) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.2) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.2) lib/puma/server.rb:441:in `process_client'
+puma (5.6.2) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started POST "/rails/actions" for ::1 at 2022-03-18 01:03:55 +0200
+  [1m[35m (1993.6ms)[0m  [1m[35mCREATE DATABASE "friends_development" ENCODING = 'unicode'[0m
+Started POST "/rails/actions" for ::1 at 2022-03-18 01:03:59 +0200
+  [1m[35m (2353.3ms)[0m  [1m[35mCREATE DATABASE "friends_test" ENCODING = 'unicode'[0m
+  [1m[35m (0.8ms)[0m  [1m[35mCREATE DATABASE "friends_development" ENCODING = 'unicode'[0m
+  [1m[35m (0.9ms)[0m  [1m[35mCREATE DATABASE "friends_test" ENCODING = 'unicode'[0m
+Started GET "/" for ::1 at 2022-03-18 01:04:09 +0200
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/munsa/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/railties-7.0.2.3/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/munsa/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/railties-7.0.2.3/lib/rails/templates/rails/welcome/index.html.erb (Duration: 4.7ms | Allocations: 419)
+Completed 200 OK in 33ms (Views: 7.2ms | ActiveRecord: 0.0ms | Allocations: 4491)
+
+
+Started GET "/home/index" for ::1 at 2022-03-18 01:04:31 +0200
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 1.6ms | Allocations: 147)
+  Rendered layout layouts/application.html.erb (Duration: 843.0ms | Allocations: 95182)
+Completed 200 OK in 853ms (Views: 849.1ms | ActiveRecord: 0.0ms | Allocations: 96474)
+
+
+Started GET "/home/index" for ::1 at 2022-03-18 01:08:04 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/home/index"):
+  
+Started GET "/" for ::1 at 2022-03-18 01:08:11 +0200
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 23)
+  Rendered layout layouts/application.html.erb (Duration: 26.0ms | Allocations: 13694)
+Completed 200 OK in 32ms (Views: 30.5ms | ActiveRecord: 0.0ms | Allocations: 14591)
+
+
+Started GET "/" for ::1 at 2022-03-18 01:08:15 +0200
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 15)
+  Rendered layout layouts/application.html.erb (Duration: 4.4ms | Allocations: 2271)
+Completed 200 OK in 6ms (Views: 5.4ms | ActiveRecord: 0.0ms | Allocations: 2608)
+
+
+Started GET "/" for ::1 at 2022-03-18 01:21:33 +0200
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 146)
+  Rendered layout layouts/application.html.erb (Duration: 15.4ms | Allocations: 14017)
+Completed 200 OK in 18ms (Views: 16.9ms | Allocations: 15231)
+
+
+Started GET "/home/about" for ::1 at 2022-03-18 01:21:48 +0200
+Processing by HomeController#about as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/about.html.erb within layouts/application
+  Rendered home/about.html.erb within layouts/application (Duration: 1.3ms | Allocations: 107)
+  Rendered layout layouts/application.html.erb (Duration: 9.4ms | Allocations: 2378)
+Completed 200 OK in 12ms (Views: 11.3ms | Allocations: 2765)
+
+
+Started GET "/home/about" for ::1 at 2022-03-18 01:22:25 +0200
+Processing by HomeController#about as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/about.html.erb within layouts/application
+  Rendered home/about.html.erb within layouts/application (Duration: 0.5ms | Allocations: 143)
+  Rendered layout layouts/application.html.erb (Duration: 9.6ms | Allocations: 2895)
+Completed 200 OK in 13ms (Views: 11.8ms | Allocations: 4021)
+
+
+Started GET "/home/about" for ::1 at 2022-03-18 01:27:10 +0200
+Processing by HomeController#about as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/about.html.erb within layouts/application
+  Rendered home/about.html.erb within layouts/application (Duration: 1.4ms | Allocations: 142)
+  Rendered layout layouts/application.html.erb (Duration: 19.3ms | Allocations: 5151)
+Completed 500 Internal Server Error in 25ms (Allocations: 6269)
+
+
+  
+ActionView::Template::Error (Missing partial home/_header with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :jbuilder]}.
+
+Searched in:
+  * "/home/munsa/Documents/friends/app/views"
+  * "/home/munsa/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/actiontext-7.0.2.3/app/views"
+  * "/home/munsa/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/actionmailbox-7.0.2.3/app/views"
+
+Did you mean?  home/heder
+               action_text/attachables/remote_image
+               action_text/contents/content
+               layouts/action_text/contents/content
+               action_text/attachment_galleries/attachment_gallery
+               action_text/attachables/missing_attachable):
+    11:   </head>
+    12: 
+    13:   <body>
+    14:   <%= render 'home/header' %>
+    15:     <%= yield %>
+    16:   </body>
+    17: </html>
+  
+app/views/layouts/application.html.erb:14
+Started GET "/" for ::1 at 2022-03-18 01:27:33 +0200
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.7ms | Allocations: 119)
+  Rendered layout layouts/application.html.erb (Duration: 12.7ms | Allocations: 4516)
+Completed 500 Internal Server Error in 15ms (Allocations: 4870)
+
+
+  
+ActionView::Template::Error (Missing partial home/_header with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :jbuilder]}.
+
+Searched in:
+  * "/home/munsa/Documents/friends/app/views"
+  * "/home/munsa/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/actiontext-7.0.2.3/app/views"
+  * "/home/munsa/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/actionmailbox-7.0.2.3/app/views"
+
+Did you mean?  home/heder
+               action_text/attachables/remote_image
+               action_text/contents/content
+               layouts/action_text/contents/content
+               action_text/attachment_galleries/attachment_gallery
+               action_text/attachables/missing_attachable):
+    11:   </head>
+    12: 
+    13:   <body>
+    14:   <%= render 'home/header' %>
+    15:     <%= yield %>
+    16:   </body>
+    17: </html>
+  
+app/views/layouts/application.html.erb:14
+Started GET "/" for ::1 at 2022-03-18 01:29:13 +0200
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.8ms | Allocations: 146)
+  Rendered home/_header.html.erb (Duration: 2.2ms | Allocations: 182)
+  Rendered layout layouts/application.html.erb (Duration: 14.6ms | Allocations: 3217)
+Completed 200 OK in 18ms (Views: 16.8ms | Allocations: 4336)
+
+
+Started GET "/" for ::1 at 2022-03-18 01:32:18 +0200
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.8ms | Allocations: 146)
+  Rendered home/_header.html.erb (Duration: 0.6ms | Allocations: 182)
+  Rendered layout layouts/application.html.erb (Duration: 14.6ms | Allocations: 3208)
+Completed 200 OK in 18ms (Views: 17.0ms | Allocations: 4349)
+
+
+Started GET "/" for ::1 at 2022-03-18 01:34:23 +0200
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 2.6ms | Allocations: 146)
+  Rendered home/_header.html.erb (Duration: 2.0ms | Allocations: 157)
+  Rendered layout layouts/application.html.erb (Duration: 47.1ms | Allocations: 3200)
+Completed 200 OK in 58ms (Views: 54.0ms | Allocations: 4342)
+
+
+Started GET "/" for ::1 at 2022-03-18 01:35:53 +0200
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.7ms | Allocations: 146)
+  Rendered home/_header.html.erb (Duration: 2.0ms | Allocations: 154)
+  Rendered layout layouts/application.html.erb (Duration: 17.4ms | Allocations: 3174)
+Completed 200 OK in 23ms (Views: 20.3ms | Allocations: 4315)
+
+
+Started GET "/" for ::1 at 2022-03-18 01:40:48 +0200
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 2.6ms | Allocations: 146)
+  Rendered home/_header.html.erb (Duration: 2.1ms | Allocations: 275)
+  Rendered layout layouts/application.html.erb (Duration: 22.0ms | Allocations: 3311)
+Completed 200 OK in 28ms (Views: 26.5ms | Allocations: 4452)
+
+
+Started GET "/" for ::1 at 2022-03-18 01:40:50 +0200
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 15)
+  Rendered home/_header.html.erb (Duration: 0.5ms | Allocations: 48)
+  Rendered layout layouts/application.html.erb (Duration: 15.3ms | Allocations: 2383)
+Completed 200 OK in 18ms (Views: 17.2ms | Allocations: 2720)
+
+
+Started GET "/" for ::1 at 2022-03-18 01:40:52 +0200
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 15)
+  Rendered home/_header.html.erb (Duration: 0.2ms | Allocations: 48)
+  Rendered layout layouts/application.html.erb (Duration: 6.7ms | Allocations: 2387)
+Completed 200 OK in 9ms (Views: 8.1ms | Allocations: 2708)
+
+
+Started GET "/home/about" for ::1 at 2022-03-18 01:41:07 +0200
+Processing by HomeController#about as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/about.html.erb within layouts/application
+  Rendered home/about.html.erb within layouts/application (Duration: 2.0ms | Allocations: 115)
+  Rendered home/_header.html.erb (Duration: 0.4ms | Allocations: 48)
+  Rendered layout layouts/application.html.erb (Duration: 10.4ms | Allocations: 2492)
+Completed 200 OK in 13ms (Views: 12.1ms | Allocations: 2863)
+
+
+Started GET "/" for ::1 at 2022-03-18 01:41:09 +0200
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 15)
+  Rendered home/_header.html.erb (Duration: 0.6ms | Allocations: 48)
+  Rendered layout layouts/application.html.erb (Duration: 10.3ms | Allocations: 2391)
+Completed 200 OK in 13ms (Views: 11.6ms | Allocations: 2712)
+
+
+Started GET "/" for ::1 at 2022-03-18 01:43:42 +0200
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 1.0ms | Allocations: 146)
+  Rendered home/_header.html.erb (Duration: 1.6ms | Allocations: 280)
+  Rendered layout layouts/application.html.erb (Duration: 10.3ms | Allocations: 3304)
+Completed 200 OK in 16ms (Views: 14.8ms | Allocations: 4429)
+
+
+Started GET "/home/about" for ::1 at 2022-03-18 01:43:44 +0200
+Processing by HomeController#about as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/about.html.erb within layouts/application
+  Rendered home/about.html.erb within layouts/application (Duration: 1.8ms | Allocations: 115)
+  Rendered home/_header.html.erb (Duration: 0.5ms | Allocations: 71)
+  Rendered layout layouts/application.html.erb (Duration: 9.4ms | Allocations: 2513)
+Completed 200 OK in 12ms (Views: 10.7ms | Allocations: 2903)
+
+
+Started GET "/" for ::1 at 2022-03-18 01:43:46 +0200
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 15)
+  Rendered home/_header.html.erb (Duration: 0.4ms | Allocations: 71)
+  Rendered layout layouts/application.html.erb (Duration: 9.6ms | Allocations: 2416)
+Completed 200 OK in 12ms (Views: 10.8ms | Allocations: 2737)
+
+
+Started GET "/" for ::1 at 2022-03-18 01:44:24 +0200
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 2.8ms | Allocations: 146)
+  Rendered home/_header.html.erb (Duration: 1.2ms | Allocations: 276)
+  Rendered layout layouts/application.html.erb (Duration: 15.7ms | Allocations: 3303)
+Completed 200 OK in 24ms (Views: 21.2ms | Allocations: 4428)
+
+
+Started GET "/" for ::1 at 2022-03-18 01:44:26 +0200
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 15)
+  Rendered home/_header.html.erb (Duration: 0.4ms | Allocations: 71)
+  Rendered layout layouts/application.html.erb (Duration: 11.5ms | Allocations: 2397)
+Completed 200 OK in 14ms (Views: 13.2ms | Allocations: 2734)
+
+
+Started GET "/home/about" for ::1 at 2022-03-18 01:44:27 +0200
+Processing by HomeController#about as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/about.html.erb within layouts/application
+  Rendered home/about.html.erb within layouts/application (Duration: 1.0ms | Allocations: 115)
+  Rendered home/_header.html.erb (Duration: 0.5ms | Allocations: 71)
+  Rendered layout layouts/application.html.erb (Duration: 9.8ms | Allocations: 2517)
+Completed 200 OK in 13ms (Views: 11.2ms | Allocations: 2891)
+
+
+Started GET "/" for ::1 at 2022-03-18 01:44:30 +0200
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 15)
+  Rendered home/_header.html.erb (Duration: 0.5ms | Allocations: 71)
+  Rendered layout layouts/application.html.erb (Duration: 9.4ms | Allocations: 2421)
+Completed 200 OK in 12ms (Views: 10.7ms | Allocations: 2742)
+
+
+Started GET "/home/about" for ::1 at 2022-03-18 01:44:33 +0200
+Processing by HomeController#about as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/about.html.erb within layouts/application
+  Rendered home/about.html.erb within layouts/application (Duration: 0.1ms | Allocations: 15)
+  Rendered home/_header.html.erb (Duration: 0.3ms | Allocations: 71)
+  Rendered layout layouts/application.html.erb (Duration: 6.0ms | Allocations: 2415)
+Completed 200 OK in 8ms (Views: 7.2ms | Allocations: 2736)
+
+
+Started GET "/" for ::1 at 2022-03-18 01:44:34 +0200
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 15)
+  Rendered home/_header.html.erb (Duration: 0.5ms | Allocations: 71)
+  Rendered layout layouts/application.html.erb (Duration: 8.7ms | Allocations: 2409)
+Completed 200 OK in 11ms (Views: 10.0ms | Allocations: 2730)
+
+
+Started GET "/" for ::1 at 2022-03-18 01:45:27 +0200
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.8ms | Allocations: 146)
+  Rendered home/_header.html.erb (Duration: 2.5ms | Allocations: 276)
+  Rendered layout layouts/application.html.erb (Duration: 12.6ms | Allocations: 3303)
+Completed 200 OK in 16ms (Views: 15.0ms | Allocations: 4429)
+
+
